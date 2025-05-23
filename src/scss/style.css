@@ -52,8 +52,11 @@ html {
 }
 
 .star-5 {
+  background-image: url("../../images/star.png");
   position: absolute;
   right: 1px;
+  width: 587px;
+  height: 800px;
 }
 
 .star-7 {
@@ -109,7 +112,7 @@ h1 {
   color: #202027;
   padding-top: 196px;
   padding-bottom: 24px;
-  max-width: 770px;
+  max-width: 769px;
 }
 
 .container-content__text {
@@ -305,6 +308,7 @@ h1 {
 }
 .games .game .game-box {
   background-color: #FFFFFF;
+  display: flex;
   padding-top: 48px;
   padding-left: 48px;
   padding-right: 156px;
@@ -326,9 +330,9 @@ h1 {
   margin-bottom: 36px;
 }
 .games .game__img {
-  max-width: 600px;
-  height: 500px;
+  width: 100%;
   border-radius: 47px;
+  object-fit: cover;
 }
 
 .footer__content {
