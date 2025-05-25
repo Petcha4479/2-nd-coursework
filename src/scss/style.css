@@ -309,6 +309,8 @@ h1 {
 .games .game .game-box {
   background-color: #FFFFFF;
   display: flex;
+  flex-direction: column;
+  gap: 24px;
   padding-top: 48px;
   padding-left: 48px;
   padding-right: 156px;
@@ -326,8 +328,7 @@ h1 {
   line-height: 133%;
   color: #202027;
   width: 396px;
-  margin-top: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 12px;
 }
 .games .game__img {
   width: 100%;
@@ -346,13 +347,9 @@ h1 {
 }
 
 @media screen and (width <= 1224px) {
-  .content {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .main {
-    padding-left: 24px;
-    padding-right: 24px;
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .main .items {
     justify-items: center;
@@ -360,9 +357,98 @@ h1 {
   .main .items .item {
     grid-column: span 6;
   }
-  .box {
-    padding-left: 24px;
-    padding-right: 24px;
+  .items {
+    gap: 32px;
+  }
+  .items .item-one, .items .item-two, .items .item-four, .items .item-five {
+    height: 543px;
+    margin-top: 0;
+  }
+}
+@media screen and (width <= 1074px) {
+  .star-5 {
+    background-repeat: no-repeat;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  .games .game .game-box {
+    padding-right: 156px;
+    padding-top: 15px;
+  }
+  .games .game .game-box .game-box__title {
+    font-size: 39px;
+  }
+}
+@media screen and (width <= 1020px) {
+  .star-5 {
+    display: none;
+  }
+  .star-14 {
+    display: block;
+    position: absolute;
+    right: 1px;
+  }
+  .games .game .game-box {
+    padding-right: 40px;
+  }
+}
+@media screen and (width <= 924px) {
+  .games .game .game-box {
+    padding-right: 20px;
+  }
+  .games .game .game-box .game-box__title {
+    font-size: 32px;
+  }
+  .games .game .game-box .game-box__text {
+    font-size: 16px;
+  }
+}
+@media screen and (width <= 892px) {
+  .games {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .games .game {
+    flex-direction: column;
+    grid-column: span 2;
+    align-items: center;
+    border-radius: 72px;
+  }
+  .games .game .game-box {
+    align-items: start;
+    padding: 29px 32px;
+  }
+  .games .game .game-box .game-box__title {
+    width: 236px;
+  }
+  .games .game .game__img {
+    order: -1;
+    border-radius: 64px;
+  }
+}
+@media screen and (width <= 820px) {
+  .items {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media screen and (width <= 740px) {
+  .star-3 {
+    bottom: 100px;
+  }
+  .star-4 {
+    bottom: 25px;
+  }
+}
+@media screen and (width <= 500px) {
+  .star-3 {
+    right: 200px;
+  }
+  .star-4 {
+    right: 110px;
+  }
+  .games .game .game__img {
+    max-width: 460px;
   }
 }
 @media screen and (width <= 376px) {
